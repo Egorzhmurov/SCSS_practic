@@ -91,20 +91,37 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 12px;
+    width: 100%;
     background: #fff;
     border: 1px solid rgba(16, 10, 48, 0.12);
     border-radius: 10px;
     padding: 15px;
     -webkit-box-shadow: 0 12px 30px rgba(16, 10, 48, 0.12);
             box-shadow: 0 12px 30px rgba(16, 10, 48, 0.12);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 
   .c_nav__item {
     margin: 0;
+    width: 100%;
   }
 
   .c_nav__item:last-child {
     margin-left: 0;
+  }
+
+  .c_nav__link,
+  .c_nav__btn {
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .c_nav__btn {
+    margin-top: 6px;
+    text-align: center;
   }
 
   #c_nav-toggle:checked ~ .c_nav {
