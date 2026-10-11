@@ -9,13 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media/media.css">
 </head>
 <body>
     <header>
         <div class="c_header">
             <a href=""><img src="./images/logo.svg" alt="Logo"></a>
-            <nav>
-                <ul class="c_nav">
+            <input type="checkbox" id="c_nav-toggle" class="c_nav-toggle">
+            <label for="c_nav-toggle" class="c_nav-toggle-label" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="c_nav">
+                <ul class="c_nav-list">
                     <li class="c_nav__item">
                         <a href="#" class="c_nav__link">Tarifs</a>
                     </li>
