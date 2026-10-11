@@ -25,9 +25,11 @@
 @media (max-width: 860px) {
   .c_header {
     position: relative;
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-right: 15px;
   }
 
   .c_nav-toggle,
@@ -42,16 +44,22 @@
   }
 
   .c_nav-toggle-label {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 36px;
     height: 28px;
     cursor: pointer;
     z-index: 25;
+    margin-left: auto;
   }
 
   .c_nav-toggle-label span {
@@ -59,7 +67,7 @@
     height: 3px;
     background: #100A30;
     border-radius: 999px;
-    margin: 5px 0;
+    margin: 4px 0;
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
